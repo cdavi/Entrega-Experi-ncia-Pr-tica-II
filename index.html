@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONG Impacto - Página Inicial</title>
+    <title>ONG Impacto</title>
     <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
     
@@ -16,42 +18,23 @@
             
             <nav class="main-nav">
                 <input type="checkbox" id="nav-toggle-checkbox" class="nav-toggle-checkbox">
-                <label for="nav-toggle-checkbox" class="nav-toggle-label">&#9776;</label> <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="projetos.html">Projetos e Doações</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                <label for="nav-toggle-checkbox" class="nav-toggle-label">&#9776;</label>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link" data-route="home">Início</a></li>
+                    <li><a href="#projetos" class="nav-link" data-route="projetos">Projetos e Doações</a></li>
+                    <li><a href="#cadastro" class="nav-link" data-route="cadastro">Cadastro</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="grid-container">
-                <section id="sobre" class="col-span-8"> <h1>Sobre a ONG Impacto</h1>
-                    <p>Nossa missão é transformar vidas e comunidades através de ações sociais efetivas. Promovemos o desenvolvimento social, educacional e ambiental das comunidades carentes.</p>
-                    
-                    <article>
-                        <h2>Visão e Valores</h2>
-                        <p>Ser referência em transparência, comprometimento e impacto social positivo.</p>
-                    </article>
-                </section>
-
-                <aside id="contato" class="col-span-4"> <h2>Informações de Contato</h2>
-                    <address>
-                        <p>Rua da Toalha, 43 - Centro</p>
-                        <p>Fortaleza, CE - CEP: 60000-000</p>
-                        <p>Telefone: (85) 99999-0000</p>
-                        <p>Email: <a href="mailto:contato@ongimpacto.org">contato@ongimpacto.org</a></p>
-                    </address>
-                </aside>
-            </div>
-        </div>
-    </main>
+    <main id="app">
+        </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ONG Impacto. Dont Panic!!!</p>
+            <p>&copy; 2025 ONG Impacto. Todos os direitos reservados.</p>
         </div>
     </footer>
 

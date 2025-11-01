@@ -1,81 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos e Voluntariado - ONG Impacto</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+<div class="container">
+    <h1>Nossos Projetos e Como Ajudar</h1>
     
-    <header>
-        <div class="header-container">
-            <figure class="logo">
-                <img src="imagens/logo.png" alt="Logo da ONG Impacto">
-            </figure>
+    <section id="projetos-sociais">
+        <h2>Projetos em Andamento</h2>
+        
+        <div class="grid-container">
             
-            <nav class="main-nav">
-                <input type="checkbox" id="nav-toggle-checkbox" class="nav-toggle-checkbox">
-                <label for="nav-toggle-checkbox" class="nav-toggle-label">&#9776;</label>
-                
-                <ul class="nav-menu">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html" class="active">Projetos e Doações</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <h1>Nossos Projetos e Como Ajudar</h1>
+            <article class="card col-span-6">
+                <img src="imagens/projeto_educacao.jpg" alt="Jovens em sala de aula" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Educação Digital</h3>
+                        <span class="badge">Educação</span>
+                    </div>
+                    <p>Capacitação de jovens para o mercado de trabalho com cursos gratuitos de informática.</p>
+                </div>
+            </article>
             
-            <section id="projetos-sociais">
-                <h2>Projetos em Andamento</h2>
-                
-                <div class="grid-container">
-                    
-                    <article class="card col-span-6"> <img src="imagens/projeto_educacao.jpg" alt="Jovens em sala de aula" class="card-image">
-                        <div class="card-content">
-                            <div class="card-header">
-                                <h3>Educação Digital</h3>
-                                <span class="badge">Educação</span> </div>
-                
-                            <p>Capacitação de jovens para o mercado de trabalho com cursos gratuitos de informática.</p>
-                        </div>
-                    </article>
-                    
-                    <article class="card col-span-6"> <img src="imagens/projeto_horta.jpg" alt="Horta comunitária" class="card-image"> <div class="card-content">
-                            <div class="card-header">
-                                <h3>Horta Comunitária</h3>
-                                <span class="badge">Sustentável</span> </div>
-                            <p>Garantia de segurança alimentar e geração de renda para famílias em espaços urbanos.</p>
-                        </div>
-                    </article>
-
+            <article class="card col-span-6">
+                <img src="imagens/projeto_horta.jpg" alt="Horta comunitária" class="card-image">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Horta Comunitária</h3>
+                        <span class="badge">Sustentável</span>
+                    </div>
+                    <p>Garantia de segurança alimentar e geração de renda para famílias em espaços urbanos.</p>
                 </div>
-            </section>
+            </article>
 
-            <section id="como-ajudar" class="grid-container">
-                <div class="col-span-6">
-                    <h2>Seja um Voluntário</h2>
-                    <p>Seu tempo e talento podem fazer uma enorme diferença. Precisamos de voluntários para aulas, eventos e administração. Interessado?</p>
-                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se agora!</a> </div>
-                <div class="col-span-6">
-                    <h2>Como Doar</h2>
-                    <p>Sua doação financeira é vital para mantermos nossos projetos. Você pode doar de forma segura através de PIX.</p>
-                    <p><strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99</p>
-                </div>
-            </section>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 ONG Impacto. Dont Panic!!!</p>
+    <section id="como-ajudar" class="grid-container">
+        <div class="col-span-6">
+            <h2>Seja um Voluntário</h2>
+            <p>Seu tempo e talento podem fazer uma enorme diferença. Precisamos de voluntários para aulas, eventos e administração. Interessado?</p>
+            <a href="#cadastro" class="btn btn-primary nav-link" data-route="cadastro">Cadastre-se agora!</a>
         </div>
-    </footer>
-
-</body>
-</html>
+        <div class="col-span-6">
+            <h2>Como Doar</h2>
+            <p>Sua doação financeira é vital para mantermos nossos projetos. Você pode doar de forma segura através de PIX.</p>
+            <p><strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99</p>
+        </div>
+    </section>
+</div>

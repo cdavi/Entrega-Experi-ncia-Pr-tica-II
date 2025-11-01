@@ -1,82 +1,8 @@
-/* Breakpoint 1: Telas Grandes*/
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
+/* Em css/responsive.css, dentro do breakpoint de 768px ou 992px */
+@media (min-width: 768px) {
+  
+    /* Centraliza colunas */
+    .col-md-8.col-center {
+        grid-column: 3 / span 8;
     }
-}
-
-/* Breakpoint 2: Tablets*/
-@media (max-width: 992px) {
-    /* Grid de 12 colunas se adapta */
-    .col-span-6 {
-        grid-column: span 6;
-    }
-    .col-span-4, .col-span-8 {
-        grid-column: span 12; /* Empilha colunas */
-    }
-}
-
-/* Breakpoint 3: Tablets Pequenos (768px) - MENU HAMBÚRGUER ATIVA AQUI */
-@media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-
-    /* --- Ativação do Menu Hambúrguer --- */
-    .nav-toggle-label {
-        display: block; /* Mostra o ícone */
-    }
-
-    .nav-menu {
-        display: none; /* Esconde o menu desktop */
-        position: absolute;
-        top: 100%; /* Abaixo do header */
-        right: 0;
-        background-color: var(--color-white);
-        box-shadow: var(--box-shadow);
-        border-radius: var(--border-radius);
-        flex-direction: column; /* Menu vertical */
-        width: 250px;
-        padding: var(--spacing-2);
-        z-index: 100;
-    }
-    
-    .nav-menu li {
-        width: 100%;
-    }
-    .nav-menu li a {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-
-    /* Quando o checkbox é marcado, mostra o menu */
-    .nav-toggle-checkbox:checked ~ .nav-menu {
-        display: flex;
-    }
-    /* --- Fim do Menu Hambúrguer --- */
-
-    /* Grid de 12 colunas se adapta */
-    .col-span-6, .col-span-4, .col-span-8 {
-        grid-column: span 12; /* Empilha tudo */
-    }
-}
-
-/* Breakpoint 4: Celulares Grandes (576px) */
-@media (max-width: 576px) {
-    .container {
-        padding: var(--spacing-3) 0;
-    }
-
-    .header-container {
-        width: 95%;
-    }
-
-    .btn {
-        width: 100%; /* Botões ocupam 100% da largura */
-    }
-}
-
-/* Breakpoint 5: Celulares Pequenos (480px) */
-@media (max-width: 480px) {
-    h1 { font-size: 1.8rem; }
 }
